@@ -20,7 +20,7 @@ try:
     # Forecast API
     api_response = api_instance.forecast_weather(q, days, lang=lang)
 
-    # Tulostetaan ennuste kolmelle päivälle
+    
     location = api_response['location']
     forecast_days = api_response['forecast']['forecastday']
     
