@@ -19,8 +19,6 @@ lang = 'fi'
 try:
     # Forecast API
     api_response = api_instance.forecast_weather(q, days, lang=lang)
-
-    
     location = api_response['location']
     forecast_days = api_response['forecast']['forecastday']
     
